@@ -40,6 +40,12 @@ class CartProduct extends Component {
     product.quantity = product.quantity - 1;
     changeProductQuantity(product);
   }
+  
+  handleOnfit = () => {
+    const { product } = this.state;
+    changeProductQuantity(product);
+
+  }
 
   render() {
     const { removeProduct } = this.props;
